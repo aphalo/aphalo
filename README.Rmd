@@ -1,0 +1,242 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "illustrations/",
+  fig.retina = 3,
+  out.width = "100%"
+)
+```
+
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=aphalo&show_icons=true&theme=transparent)](https://github.com/anuraghazra/github-readme-stats)
+
+## Skills
+
+Programing: R, (Python), C++, (Java), C, bash, awk, Perl, sh, FORTRAN, Modula-2, Pascal, BASIC, Forth.
+
+Text markup: $\LaTeX$, $\TeX$, Quarto, Rmarkdown, markdown, HTML.
+
+Revision control systems: git, svn, cvs, rss.
+
+Drafting: Inkscape, OpenSCAD, Adobe Illustrator.
+
+Image/photography: Capture One, Helicon Focus, Lumariver Profile, RawDigger, VueScan, LightRoom, Photoshop.
+
+Video and interactive tutorials: FlashBack Pro, R shiny.
+
+## IDE/GUI's I like
+
+WinEdt (for $\LaTeX$, $\TeX$, with embedded R code or not), RStudio (for R scripts, Quarto and Rmarkdown), GitKraken (for git).
+
+## Elsewhere
+
+ORCID profile: <a href="https://orcid.org/0000-0003-3385-972X">
+<img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" />
+https://orcid.org/0000-0003-3385-972X
+</a>
+
+R-Universe profile: [https://aphalo.r-universe.dev](https://aphalo.r-universe.dev).
+[![:name status badge](https://aphalo.r-universe.dev/badges/:name)](https://aphalo.r-universe.dev/)
+[![:packages status badge](https://aphalo.r-universe.dev/badges/:packages)](https://aphalo.r-universe.dev/)
+
+Web site for the book [Learn R: As a Language](https://www.learnr-book.info/).
+
+## Blog posts and web pages at [R for Photobiology](https://www.r4photobiology.info/) 
+
+```{r, echo=FALSE}
+find_key <- function(x, key){
+  j <- lapply(x, function(x){
+    k <- grep(sprintf("^%s:", key), 
+            x, value = TRUE)
+    k <- gsub(sprintf("^%s: |'", key), "", k)
+    k[1] 
+  })
+  unlist(j)
+}
+
+```
+
+```{r, echo = FALSE}
+url_root <- "https://www.r4photobiology.info/"
+
+post.files <- list.files("~/R-web-blog/r4p-blog/", 
+           ".*qmd$",
+           recursive = TRUE, 
+           full.names = TRUE)
+post.files <- grep("_extensions", x = post.files, value = TRUE, invert = TRUE)
+
+posts <- lapply(post.files, readLines)
+
+r4p_posts.df <- tibble::tibble(
+  n = seq_along(posts),
+  draft = find_key(posts, "draft") |> 
+    grepl(pattern = "true", x = _),
+  date = lubridate::ymd(find_key(posts, "date")),
+  slug = find_key(posts, "slug") |> 
+    gsub('\\"', "", x = _),
+  title = find_key(posts, "title"),
+  post.url = paste(url_root, 
+               gsub("C:/Users/Aphalo/Documents/R-web-blog/r4p-blog/|\\.qmd", 
+                    "", post.files),
+               ".html",
+               sep = ""),
+  link = paste("[", title, "]", "(", post.url, ")", sep = "")
+) |> 
+  subset(subset = !draft & !is.na(date)) |> # date is NA for indexes and home
+  dplyr::arrange(date)
+
+today    <- lubridate::today()
+min_date <- min(r4p_posts.df$date, na.rm = TRUE)
+last_post <- lubridate::days(today - max(r4p_posts.df$date, na.rm = TRUE))
+
+r4p_post_avg <- nrow(r4p_posts.df)/as.numeric(today - min_date) * 30
+r4p_post_avg <- sprintf("%0.1f", r4p_post_avg)
+
+r4p_postbtw <- as.numeric(today - min_date) / nrow(r4p_post_avg)
+r4p_postbtw <- sprintf("%s", round(r4p_postbtw, digits = 0))
+```
+
+The site [R for Photobiology](https://www.r4photobiology.info) contains `r nrow(r4p_posts.df)` posts and pages published since `r format.Date(min_date)`! I have recently rebuilt the site using Quarto, and I have transferred only some of the posts originally published using WordPress. I am slowly adding more old posts, but only those that remain relevant. The figure below shows original publication date even when posts have been later updated.
+
+That's a post roughly every `r r4p_postbtw` days, or about `r r4p_post_avg` posts per month, since `r format.Date(min_date)`.
+
+The last post was published `r as.numeric(last_post) / 3600 / 24` days ago.
+
+
+```{r 'r4p-plot', echo = FALSE,  fig.width=10, fig.height=2.5}
+library(lattice)
+
+r4p_posts.df$ones <- 1
+
+# Assuming postdf is loaded and has a 'date' column
+# trellis.par.set(background = list(col="transparent"))
+
+xyplot(ones ~ date, 
+       data = r4p_posts.df,
+       type = 'p',
+       pch = "|",  
+       cex = 5,   
+       col = "darkblue",
+       alpha = 1/3,
+       xlab = "",
+       ylab = "",
+       main = "R for Photobiology: Published Posts and Pages",
+       scales = list(x = list(cex = 1.4), y = list(draw = FALSE)),
+       strip = FALSE,  # Removes strip labels
+       axis.line = list(col = "transparent"),
+       layout = c(1, 1),  # Single panel
+       par.settings = list(
+         strip.border = list(col = "transparent"), #making the border transparent
+         axis.line = list(col = "transparent") #making the axes transparent
+       )
+      )
+
+```
+
+<details><summary>📂 Click to expand a full list of posts</summary>
+
+```{r r4p-posts-table, results='asis', echo = FALSE}
+data.frame(
+  Date = rev(r4p_posts.df$date),
+  Title = rev(r4p_posts.df$link)
+) |> 
+  knitr::kable()
+```
+</details>
+
+## Blog posts and web pages at [Photo Rumblings and Whispers](https://www.photo-spectrum.info/) 
+
+```{r, echo = FALSE}
+url_root <- "https://www.photo-spectrum.info/"
+
+post.files <- list.files("~/R-web-blog/photo-spectrum-blog/", 
+           ".*qmd$",
+           recursive = TRUE, 
+           full.names = TRUE)
+post.files <- grep("_extensions", x = post.files, value = TRUE, invert = TRUE)
+
+posts <- lapply(post.files, readLines)
+
+photo_posts.df <- tibble::tibble(
+  n = seq_along(posts),
+  draft = find_key(posts, "draft") |> 
+    grepl(pattern = "true", x = _),
+  date = lubridate::ymd(find_key(posts, "date")),
+  slug = find_key(posts, "slug") |> 
+    gsub('\\"', "", x = _),
+  title = find_key(posts, "title"),
+  post.url = paste(url_root, 
+               gsub("C:/Users/Aphalo/Documents/R-web-blog/photo-spectrum-blog/|\\.qmd", 
+                    "", post.files),
+               ".html",
+               sep = ""),
+  link = paste("[", title, "]", "(", post.url, ")", sep = "")
+) |> 
+  subset(subset = !draft & !is.na(date)) |> # date is NA for indexes and home
+  dplyr::arrange(date)
+
+today    <- lubridate::today()
+min_date <- min(photo_posts.df$date, na.rm = TRUE)
+last_post <- lubridate::days(today - max(photo_posts.df$date, na.rm = TRUE))
+
+photo_post_avg <- nrow(photo_posts.df)/as.numeric(today - min_date) * 30
+photo_post_avg <- sprintf("%0.1f", photo_post_avg)
+
+photo_postbtw <- as.numeric(today - min_date) / nrow(r4p_post_avg)
+photo_postbtw <- sprintf("%s", round(photo_postbtw, digits = 0))
+```
+
+The [Photo Rumblings and Whispers](https://www.photo-spectrum.info/) has `r nrow(photo_posts.df)` posts since `r format.Date(min_date)`!  I have recently rebuilt the site using Quarto, and I have transferred most of the posts originally published using WordPress. I may add one or two old posts. The figure below shows original publication date even when posts and pages have been later updated. I have updated several of the posts and pages and I aim to continue updating them as needed.
+
+That's a post roughly every `r photo_postbtw` days, or about `r photo_post_avg` posts per month, since `r min_date`.
+
+The last post was published `r as.numeric(last_post) / 3600 / 24` days ago.
+
+```{r 'photo-plot', echo = FALSE,  fig.width=10, fig.height=2.5}
+library(lattice)
+
+photo_posts.df$ones <- 1
+
+# Assuming postdf is loaded and has a 'date' column
+# trellis.par.set(background = list(col="transparent"))
+
+xyplot(ones ~ date, 
+       data = photo_posts.df,
+       type = 'p',
+       pch = "|",  
+       cex = 5,   
+       col = "orange",
+       apha = 1/2,
+       xlab = "",
+       ylab = "",
+       main = "Photo Rumblings and Whispers: Published Posts and Pages",
+       scales = list(x = list(cex = 1.4), y = list(draw = FALSE)),
+       strip = FALSE,  # Removes strip labels
+       axis.line = list(col = "transparent"),
+       layout = c(1, 1),  # Single panel
+       par.settings = list(
+         strip.border = list(col = "transparent"), #making the border transparent
+         axis.line = list(col = "transparent") #making the axes transparent
+       )
+      )
+
+```
+
+<details><summary>📂 Click to expand a full list of posts</summary>
+
+```{r photo-posts-table, results='asis', echo = FALSE}
+data.frame(
+  Date = rev(photo_posts.df$date),
+  Title = rev(photo_posts.df$link)
+) |> 
+  knitr::kable()
+```
+</details>
+
+_Updated `r Sys.time()`_
