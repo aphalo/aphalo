@@ -31,15 +31,53 @@ ORCID profile: <a href="https://orcid.org/0000-0003-3385-972X">
 <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" />
 https://orcid.org/0000-0003-3385-972X </a>
 
+Web site for the book [Learn R: As a
+Language](https://www.learnr-book.info/).
+
+## R Packages
+
+I have published in CRAN one package roughly every 15 days, or about
+1.97 package updates per month, since 2016-01-29.
+
+The most recent of these updates was published in CRAN 0.2 days ago.
+
+<img src="illustrations/cran-packages-plot-1.png" width="100%" />
+
+<details>
+<summary>
+📂 Click to expand a full list of my packages
+</summary>
+
+| R package             | Title                                                                                                             | Version | Date       |
+|:----------------------|:------------------------------------------------------------------------------------------------------------------|:--------|:-----------|
+| gginnards             | [Explore the Innards of ‘ggplot2’ Objects](https://doi.org/10.32614/CRAN.package.gginnards)                       | 0.2.0   | 2024-05-01 |
+| ggpmisc               | [Miscellaneous Extensions to ‘ggplot2’](https://doi.org/10.32614/CRAN.package.ggpmisc)                            | 0.6.0   | 2024-06-28 |
+| ggpp                  | [Grammar Extensions to ‘ggplot2’](https://doi.org/10.32614/CRAN.package.ggpp)                                     | 0.5.8-1 | 2024-07-01 |
+| ggspectra             | [Extensions to ‘ggplot2’ for Radiation Spectra](https://doi.org/10.32614/CRAN.package.ggspectra)                  | 0.3.12  | 2023-10-21 |
+| learnrbook            | [Datasets and Code Examples from P. J. Aphalo’s “Learn R” Book](https://doi.org/10.32614/CRAN.package.learnrbook) | 2.0.1   | 2024-04-28 |
+| photobiology          | [Photobiological Calculations](https://doi.org/10.32614/CRAN.package.photobiology)                                | 0.11.2  | 2024-03-31 |
+| photobiologyFilters   | [Spectral Transmittance and Spectral Reflectance Data](https://doi.org/10.32614/CRAN.package.photobiologyFilters) | 0.6.0   | 2024-02-27 |
+| photobiologyInOut     | [Read Spectral and Logged Data from Foreign Files](https://doi.org/10.32614/CRAN.package.photobiologyInOut)       | 0.4.27  | 2023-07-20 |
+| photobiologyLamps     | [Spectral Irradiance Data for Lamps](https://doi.org/10.32614/CRAN.package.photobiologyLamps)                     | 0.5.2   | 2023-10-24 |
+| photobiologyLEDs      | [Spectral Data for Light-Emitting-Diodes](https://doi.org/10.32614/CRAN.package.photobiologyLEDs)                 | 0.5.2   | 2023-11-01 |
+| photobiologyPlants    | [Plant Photobiology Related Functions and Data](https://doi.org/10.32614/CRAN.package.photobiologyPlants)         | 0.5.0   | 2024-04-02 |
+| photobiologySensors   | [Response Data for Light Sensors](https://doi.org/10.32614/CRAN.package.photobiologySensors)                      | 0.5.1   | 2023-10-24 |
+| photobiologySun       | [Data for Sunlight Spectra](https://doi.org/10.32614/CRAN.package.photobiologySun)                                | 0.5.0   | 2024-04-01 |
+| photobiologyWavebands | [Waveband Definitions for UV, VIS, and IR Radiation](https://doi.org/10.32614/CRAN.package.photobiologyWavebands) | 0.5.2   | 2023-10-24 |
+
+</details>
+
+Updates under development are published at R-Universe as soon as merged
+or commited into the main branch in the repositories at GitHub. Two
+packages that depend on a commercial closed-source driver, but usable
+with a free runtime of the driver, are published only at R-Universe.
+
 R-Universe profile: <https://aphalo.r-universe.dev>. [![:name status
 badge](https://aphalo.r-universe.dev/badges/:name)](https://aphalo.r-universe.dev/)
 [![:packages status
 badge](https://aphalo.r-universe.dev/badges/:packages)](https://aphalo.r-universe.dev/)
 
-Web site for the book [Learn R: As a
-Language](https://www.learnr-book.info/).
-
-## Blog posts and web pages at [R for Photobiology](https://www.r4photobiology.info/)
+## Posts and Web Pages at [R for Photobiology](https://www.r4photobiology.info/)
 
 The site [R for Photobiology](https://www.r4photobiology.info) contains
 84 posts and pages published since 2016-09-15! I have recently rebuilt
@@ -51,7 +89,7 @@ publication date even when posts have been later updated.
 That’s a post roughly every days, or about 0.9 posts per month, since
 2016-09-15.
 
-The last post was published 28 days ago.
+The last post was published 29 days ago.
 
 <img src="illustrations/r4p-plot-1.png" width="100%" />
 
@@ -164,7 +202,7 @@ continue updating them as needed.
 That’s a post roughly every days, or about 0.3 posts per month, since
 2015-10-18.
 
-The last post was published 149 days ago.
+The last post was published 150 days ago.
 
 <img src="illustrations/photo-plot-1.png" width="100%" />
 
@@ -205,4 +243,10 @@ The last post was published 149 days ago.
 
 </details>
 
-*Updated 2024-07-09 19:23:25.425231*
+*Updated 2024-07-10 00:53:52.741994*
+
+This REAME file is based on the [blog post by Athanasia Mo
+Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R
+code by Martin
+Henze](https://heads0rtai1s.github.io/2022/07/22/kaggle-dataset-cran-packages/)
+<https://heads0rtai1s.github.io/2022/07/22/kaggle-dataset-cran-packages/>.

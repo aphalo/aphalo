@@ -41,13 +41,96 @@ ORCID profile: <a href="https://orcid.org/0000-0003-3385-972X">
 https://orcid.org/0000-0003-3385-972X
 </a>
 
+Web site for the book [Learn R: As a Language](https://www.learnr-book.info/).
+
+## R Packages
+
+```{r, echo=FALSE}
+all_pkgs.df <- tools::CRAN_package_db() |>
+  tibble::as_tibble()
+
+all_pkgs.df |> 
+  janitor::clean_names()  |> 
+  dplyr::filter(grepl("Aphalo", author)) -> my_pkgs.df
+
+my_pkgs.df |> 
+  dplyr::filter(package != "ggrepel") |>
+  dplyr::select("R package" = package, Title = title, Version = version, Date = published, doi) -> my_pkgs_condensed.df 
+```
+
+
+```{r, echo = FALSE}
+packages <- my_pkgs_condensed.df[["R package"]]
+pkgs_hist.ls <- list()
+dates <- lubridate::Date()
+for (package in packages) {
+  temp <- packageRank::packageHistory(package, check.package = TRUE)
+  dates <- c(dates, temp[["Date"]])
+  pkgs_hist.ls[[package]] <- temp
+}
+dates <- sort(dates)
+
+today    <- lubridate::today()
+first_published <- dates[1]
+last_update <- dates[length(dates)] 
+
+cran_updates_avg <- length(dates)/as.numeric(today - first_published) * 30
+cran_updates_avg <- sprintf("%0.2f", cran_updates_avg)
+
+cran_updates_btw <- as.numeric(today - first_published) / length(dates)
+cran_updates_btw <- sprintf("%s", round(cran_updates_btw, digits = 0))
+```
+
+I have published in CRAN one package roughly every `r cran_updates_btw` days, or about `r cran_updates_avg` package updates per month, since `r format.Date(first_published)`.
+
+The most recent of these updates was published in CRAN `r round(as.numeric(last_update) / 3600 / 24, 1)` days ago.
+
+```{r 'cran-packages-plot', echo = FALSE,  fig.width=10, fig.height=2.5}
+library(lattice)
+
+cran_releases.df <- data.frame(dates, ones = 1)
+
+# Assuming postdf is loaded and has a 'date' column
+# trellis.par.set(background = list(col="transparent"))
+
+xyplot(ones ~ dates, 
+       data = cran_releases.df,
+       type = 'p',
+       pch = "|",  
+       cex = 5,   
+       col = "blue",
+       alpha = 1/3,
+       xlab = "",
+       ylab = "",
+       main = "R Packages: Published Updates at CRAN",
+       scales = list(x = list(cex = 1.4), y = list(draw = FALSE)),
+       strip = FALSE,  # Removes strip labels
+       axis.line = list(col = "transparent"),
+       layout = c(1, 1),  # Single panel
+       par.settings = list(
+         strip.border = list(col = "transparent"), #making the border transparent
+         axis.line = list(col = "transparent") #making the axes transparent
+       )
+      )
+```
+
+<details><summary>📂 Click to expand a full list of my packages</summary>
+
+```{r cran-packages-table, results='asis', echo = FALSE}
+my_pkgs_condensed.df |> 
+  dplyr::mutate(Title = paste("[", Title, "](", "https://doi.org/", doi, ")", sep = "")) |>
+  dplyr::select(-doi) |>
+  knitr::kable()
+```
+</details>
+
+Updates under development are published at R-Universe as soon as merged or commited into the main branch in the repositories at GitHub. Two packages that depend on a commercial closed-source driver, but usable with a free runtime of the driver, are published only at R-Universe.
+
 R-Universe profile: [https://aphalo.r-universe.dev](https://aphalo.r-universe.dev).
 [![:name status badge](https://aphalo.r-universe.dev/badges/:name)](https://aphalo.r-universe.dev/)
 [![:packages status badge](https://aphalo.r-universe.dev/badges/:packages)](https://aphalo.r-universe.dev/)
 
-Web site for the book [Learn R: As a Language](https://www.learnr-book.info/).
-
-## Blog posts and web pages at [R for Photobiology](https://www.r4photobiology.info/) 
+## Posts and Pages at [R for Photobiology](https://www.r4photobiology.info/) 
 
 ```{r, echo=FALSE}
 find_key <- function(x, key){
@@ -150,7 +233,7 @@ data.frame(
 ```
 </details>
 
-## Blog posts and web pages at [Photo Rumblings and Whispers](https://www.photo-spectrum.info/) 
+## Posts and pages at [Photo Rumblings and Whispers](https://www.photo-spectrum.info/) 
 
 ```{r, echo = FALSE}
 url_root <- "https://www.photo-spectrum.info/"
@@ -240,3 +323,5 @@ data.frame(
 </details>
 
 _Updated `r Sys.time()`_
+
+This REAME file is based on the [blog post by Athanasia Mo Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R code by Martin Henze](https://heads0rtai1s.github.io/2022/07/22/kaggle-dataset-cran-packages/).
