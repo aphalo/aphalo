@@ -16,11 +16,11 @@ knitr::opts_chunk$set(
 
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=aphalo&show_icons=true&theme=transparent)](https://github.com/anuraghazra/github-readme-stats)
 
-## Skills
+## Computing-related Skills
 
 Programing: R, (Python), C++, (Java), C, bash, awk, Perl, sh, FORTRAN, Modula-2, Pascal, BASIC, Forth.
 
-Text markup: $\LaTeX$, $\TeX$, Quarto, Rmarkdown, markdown, HTML.
+Text mark up: $\LaTeX$, $\TeX$, Quarto, Rmarkdown, markdown, HTML.
 
 Revision control systems: git, svn, cvs, rss.
 
@@ -44,6 +44,8 @@ https://orcid.org/0000-0003-3385-972X
 Web site for the book [Learn R: As a Language](https://www.learnr-book.info/).
 
 ## R Packages
+
+The sources of the R packages I have published are in public Git repositories at GitHub.
 
 ```{r, echo=FALSE}
 all_pkgs.df <- tools::CRAN_package_db() |>
@@ -81,7 +83,7 @@ cran_updates_btw <- as.numeric(today - first_published) / length(dates)
 cran_updates_btw <- sprintf("%s", round(cran_updates_btw, digits = 0))
 ```
 
-I have published in CRAN one package roughly every `r cran_updates_btw` days, or about `r cran_updates_avg` package updates per month, since `r format.Date(first_published)`.
+I have published in CRAN one package update roughly every `r cran_updates_btw` days, or about `r cran_updates_avg` package updates per month, since `r format.Date(first_published)`.
 
 The most recent of these updates was published in CRAN `r round(as.numeric(last_update) / 3600 / 24, 1)` days ago.
 
@@ -185,12 +187,11 @@ r4p_postbtw <- as.numeric(today - min_date) / nrow(r4p_post_avg)
 r4p_postbtw <- sprintf("%s", round(r4p_postbtw, digits = 0))
 ```
 
-The site [R for Photobiology](https://www.r4photobiology.info) contains `r nrow(r4p_posts.df)` posts and pages published since `r format.Date(min_date)`! I have recently rebuilt the site using Quarto, and I have transferred only some of the posts originally published using WordPress. I am slowly adding more old posts, but only those that remain relevant. The figure below shows original publication date even when posts have been later updated.
+The site [R for Photobiology](https://www.r4photobiology.info) contains `r nrow(r4p_posts.df)` posts and pages published since `r format.Date(min_date)`! I have recently rebuilt the site using Quarto, and I have transferred only some of the posts originally published using WordPress. I am slowly adding more old posts, but only those that remain relevant. The figure below shows original publication date even when posts have been later updated. The source files are in a [public repository at GitHub](https://github.com/aphalo/r4p-blog).
 
-That's a post roughly every `r r4p_postbtw` days, or about `r r4p_post_avg` posts per month, since `r format.Date(min_date)`.
+I have published one post or page roughly every `r r4p_postbtw` days, or about `r r4p_post_avg` posts per month, since `r format.Date(min_date)`.
 
-The last post was published `r as.numeric(last_post) / 3600 / 24` days ago.
-
+I published the most recent post `r as.numeric(last_post) / 3600 / 24` days ago.
 
 ```{r 'r4p-plot', echo = FALSE,  fig.width=10, fig.height=2.5}
 library(lattice)
@@ -275,11 +276,11 @@ photo_postbtw <- as.numeric(today - min_date) / nrow(r4p_post_avg)
 photo_postbtw <- sprintf("%s", round(photo_postbtw, digits = 0))
 ```
 
-The [Photo Rumblings and Whispers](https://www.photo-spectrum.info/) has `r nrow(photo_posts.df)` posts since `r format.Date(min_date)`!  I have recently rebuilt the site using Quarto, and I have transferred most of the posts originally published using WordPress. I may add one or two old posts. The figure below shows original publication date even when posts and pages have been later updated. I have updated several of the posts and pages and I aim to continue updating them as needed.
+The [Photo Rumblings and Whispers](https://www.photo-spectrum.info/) has `r nrow(photo_posts.df)` posts since `r format.Date(min_date)`!  I have recently rebuilt the site using Quarto, and I have transferred most of the posts originally published using WordPress. I may add one or two old posts. The figure below shows original publication date even when posts and pages have been later updated. I have updated several of the posts and pages and I aim to continue updating them as needed.  The source files are in a [public repository at GitHub](https://github.com/aphalo/photo-spectrum-blog).
 
-That's a post roughly every `r photo_postbtw` days, or about `r photo_post_avg` posts per month, since `r min_date`.
+I have published one post or page roughly every `r photo_postbtw` days, or about `r photo_post_avg` posts per month, since `r min_date`.
 
-The last post was published `r as.numeric(last_post) / 3600 / 24` days ago.
+I published the most recent post or page `r as.numeric(last_post) / 3600 / 24` days ago.
 
 ```{r 'photo-plot', echo = FALSE,  fig.width=10, fig.height=2.5}
 library(lattice)

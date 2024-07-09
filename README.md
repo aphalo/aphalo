@@ -36,8 +36,11 @@ Language](https://www.learnr-book.info/).
 
 ## R Packages
 
-I have published in CRAN one package roughly every 15 days, or about
-1.97 package updates per month, since 2016-01-29.
+The sources of the R packages I have published are in public Git
+repositories at GitHub.
+
+I have published in CRAN one package update roughly every 15 days, or
+about 1.97 package updates per month, since 2016-01-29.
 
 The most recent of these updates was published in CRAN 0.2 days ago.
 
@@ -77,19 +80,21 @@ badge](https://aphalo.r-universe.dev/badges/:name)](https://aphalo.r-universe.de
 [![:packages status
 badge](https://aphalo.r-universe.dev/badges/:packages)](https://aphalo.r-universe.dev/)
 
-## Posts and Web Pages at [R for Photobiology](https://www.r4photobiology.info/)
+## Posts and Pages at [R for Photobiology](https://www.r4photobiology.info/)
 
 The site [R for Photobiology](https://www.r4photobiology.info) contains
 84 posts and pages published since 2016-09-15! I have recently rebuilt
 the site using Quarto, and I have transferred only some of the posts
 originally published using WordPress. I am slowly adding more old posts,
 but only those that remain relevant. The figure below shows original
-publication date even when posts have been later updated.
+publication date even when posts have been later updated. The source
+files are in a [public repository at
+GitHub](https://github.com/aphalo/r4p-blog).
 
-That’s a post roughly every days, or about 0.9 posts per month, since
-2016-09-15.
+I have published one post or page roughly every days, or about 0.9 posts
+per month, since 2016-09-15.
 
-The last post was published 29 days ago.
+I published the most recent post 29 days ago.
 
 <img src="illustrations/r4p-plot-1.png" width="100%" />
 
@@ -187,7 +192,7 @@ The last post was published 29 days ago.
 
 </details>
 
-## Blog posts and web pages at [Photo Rumblings and Whispers](https://www.photo-spectrum.info/)
+## Posts and pages at [Photo Rumblings and Whispers](https://www.photo-spectrum.info/)
 
     #> Warning: 1 failed to parse.
 
@@ -197,12 +202,13 @@ Quarto, and I have transferred most of the posts originally published
 using WordPress. I may add one or two old posts. The figure below shows
 original publication date even when posts and pages have been later
 updated. I have updated several of the posts and pages and I aim to
-continue updating them as needed.
+continue updating them as needed. The source files are in a [public
+repository at GitHub](https://github.com/aphalo/photo-spectrum-blog).
 
-That’s a post roughly every days, or about 0.3 posts per month, since
-2015-10-18.
+I have published one post or page roughly every days, or about 0.3 posts
+per month, since 2015-10-18.
 
-The last post was published 150 days ago.
+I published the most recent post or page 150 days ago.
 
 <img src="illustrations/photo-plot-1.png" width="100%" />
 
@@ -243,10 +249,9 @@ The last post was published 150 days ago.
 
 </details>
 
-*Updated 2024-07-10 00:53:52.741994*
+*Updated 2024-07-10 01:18:11.100803*
 
 This REAME file is based on the [blog post by Athanasia Mo
 Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R
 code by Martin
-Henze](https://heads0rtai1s.github.io/2022/07/22/kaggle-dataset-cran-packages/)
-<https://heads0rtai1s.github.io/2022/07/22/kaggle-dataset-cran-packages/>.
+Henze](https://heads0rtai1s.github.io/2022/07/22/kaggle-dataset-cran-packages/).
