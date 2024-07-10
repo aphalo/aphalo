@@ -4,21 +4,21 @@
 [![GitHub
 stats](https://github-readme-stats.vercel.app/api?username=aphalo&show_icons=true&theme=transparent)](https://github.com/anuraghazra/github-readme-stats)
 
-## Skills
+## Computing-related Skills
 
-Programing: R, (Python), C++, (Java), C, bash, awk, Perl, sh, FORTRAN,
+Programing: R, (Python), C++, (Java), C, bash, awk, Perl, sh, (FORTRAN),
 Modula-2, Pascal, BASIC, Forth.
 
-Text markup: $\LaTeX$, $\TeX$, Quarto, Rmarkdown, markdown, HTML.
+Text mark up: $\LaTeX$, $\TeX$, Quarto, Rmarkdown, markdown, HTML.
 
-Revision control systems: git, svn, cvs, rss.
+Revision control systems: git, svn, (cvs), rss.
 
 Drafting: Inkscape, OpenSCAD, Adobe Illustrator.
 
-Image/photography: Capture One, Helicon Focus, Lumariver Profile,
-RawDigger, VueScan, LightRoom, Photoshop.
+Image/photography: Capture One, Helicon Focus, Lumariver Profile
+Designer, RawDigger, VueScan, LightRoom, Photoshop.
 
-Video and interactive tutorials: FlashBack Pro, R shiny.
+Video- and interactive tutorials: FlashBack Pro, R shiny.
 
 ## IDE/GUI’s I like
 
@@ -37,7 +37,10 @@ Language](https://www.learnr-book.info/).
 ## R Packages
 
 The sources of the R packages I have published are in public Git
-repositories at GitHub.
+repositories at GitHub. Out of the packages that I have authored and
+maintain, 14 are currently available through CRAN. The total number of
+packages submissions (mostly updates) as author and maintainer is 203
+since 2016-01-29.
 
 I have published in CRAN one package update roughly every 15 days, or
 about 1.97 package updates per month, since 2016-01-29.
@@ -249,7 +252,7 @@ I published the most recent post or page 150 days ago.
 
 </details>
 
-*Updated 2024-07-10 01:18:11.100803*
+*Updated 2024-07-10 11:32:23.68419*
 
 This REAME file is based on the [blog post by Athanasia Mo
 Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R

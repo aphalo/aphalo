@@ -18,17 +18,17 @@ knitr::opts_chunk$set(
 
 ## Computing-related Skills
 
-Programing: R, (Python), C++, (Java), C, bash, awk, Perl, sh, FORTRAN, Modula-2, Pascal, BASIC, Forth.
+Programing: R, (Python), C++, (Java), C, bash, awk, Perl, sh, (FORTRAN), Modula-2, Pascal, BASIC, Forth.
 
 Text mark up: $\LaTeX$, $\TeX$, Quarto, Rmarkdown, markdown, HTML.
 
-Revision control systems: git, svn, cvs, rss.
+Revision control systems: git, svn, (cvs), rss.
 
 Drafting: Inkscape, OpenSCAD, Adobe Illustrator.
 
-Image/photography: Capture One, Helicon Focus, Lumariver Profile, RawDigger, VueScan, LightRoom, Photoshop.
+Image/photography: Capture One, Helicon Focus, Lumariver Profile Designer, RawDigger, VueScan, LightRoom, Photoshop.
 
-Video and interactive tutorials: FlashBack Pro, R shiny.
+Video- and interactive tutorials: FlashBack Pro, R shiny.
 
 ## IDE/GUI's I like
 
@@ -44,8 +44,6 @@ https://orcid.org/0000-0003-3385-972X
 Web site for the book [Learn R: As a Language](https://www.learnr-book.info/).
 
 ## R Packages
-
-The sources of the R packages I have published are in public Git repositories at GitHub.
 
 ```{r, echo=FALSE}
 all_pkgs.df <- tools::CRAN_package_db() |>
@@ -82,6 +80,8 @@ cran_updates_avg <- sprintf("%0.2f", cran_updates_avg)
 cran_updates_btw <- as.numeric(today - first_published) / length(dates)
 cran_updates_btw <- sprintf("%s", round(cran_updates_btw, digits = 0))
 ```
+
+The sources of the R packages I have published are in public Git repositories at GitHub. Out of the packages that I have authored and maintain, `r length(packages)` are currently available through CRAN. The total number of packages submissions (mostly updates) as author and maintainer is `r length(dates)` since `r format.Date(first_published)`.
 
 I have published in CRAN one package update roughly every `r cran_updates_btw` days, or about `r cran_updates_avg` package updates per month, since `r format.Date(first_published)`.
 
