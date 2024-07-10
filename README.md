@@ -45,31 +45,32 @@ since 2016-01-29.
 I have published in CRAN one package update roughly every 15 days, or
 about 1.97 package updates per month, since 2016-01-29.
 
-The most recent of these updates was published in CRAN 0.2 days ago.
+The most recent of these updates was published in CRAN on 2024-07-01.
 
 <img src="illustrations/cran-packages-plot-1.png" width="100%" />
 
 <details>
 <summary>
-📂 Click to expand a full list of my packages
+📂 Click to expand a list of my packages at CRAN with the most recently
+updated one at the top.
 </summary>
 
 | R package             | Title                                                                                                             | Version | Date       |
 |:----------------------|:------------------------------------------------------------------------------------------------------------------|:--------|:-----------|
-| gginnards             | [Explore the Innards of ‘ggplot2’ Objects](https://doi.org/10.32614/CRAN.package.gginnards)                       | 0.2.0   | 2024-05-01 |
-| ggpmisc               | [Miscellaneous Extensions to ‘ggplot2’](https://doi.org/10.32614/CRAN.package.ggpmisc)                            | 0.6.0   | 2024-06-28 |
 | ggpp                  | [Grammar Extensions to ‘ggplot2’](https://doi.org/10.32614/CRAN.package.ggpp)                                     | 0.5.8-1 | 2024-07-01 |
-| ggspectra             | [Extensions to ‘ggplot2’ for Radiation Spectra](https://doi.org/10.32614/CRAN.package.ggspectra)                  | 0.3.12  | 2023-10-21 |
+| ggpmisc               | [Miscellaneous Extensions to ‘ggplot2’](https://doi.org/10.32614/CRAN.package.ggpmisc)                            | 0.6.0   | 2024-06-28 |
+| gginnards             | [Explore the Innards of ‘ggplot2’ Objects](https://doi.org/10.32614/CRAN.package.gginnards)                       | 0.2.0   | 2024-05-01 |
 | learnrbook            | [Datasets and Code Examples from P. J. Aphalo’s “Learn R” Book](https://doi.org/10.32614/CRAN.package.learnrbook) | 2.0.1   | 2024-04-28 |
+| photobiologyPlants    | [Plant Photobiology Related Functions and Data](https://doi.org/10.32614/CRAN.package.photobiologyPlants)         | 0.5.0   | 2024-04-02 |
+| photobiologySun       | [Data for Sunlight Spectra](https://doi.org/10.32614/CRAN.package.photobiologySun)                                | 0.5.0   | 2024-04-01 |
 | photobiology          | [Photobiological Calculations](https://doi.org/10.32614/CRAN.package.photobiology)                                | 0.11.2  | 2024-03-31 |
 | photobiologyFilters   | [Spectral Transmittance and Spectral Reflectance Data](https://doi.org/10.32614/CRAN.package.photobiologyFilters) | 0.6.0   | 2024-02-27 |
-| photobiologyInOut     | [Read Spectral and Logged Data from Foreign Files](https://doi.org/10.32614/CRAN.package.photobiologyInOut)       | 0.4.27  | 2023-07-20 |
-| photobiologyLamps     | [Spectral Irradiance Data for Lamps](https://doi.org/10.32614/CRAN.package.photobiologyLamps)                     | 0.5.2   | 2023-10-24 |
 | photobiologyLEDs      | [Spectral Data for Light-Emitting-Diodes](https://doi.org/10.32614/CRAN.package.photobiologyLEDs)                 | 0.5.2   | 2023-11-01 |
-| photobiologyPlants    | [Plant Photobiology Related Functions and Data](https://doi.org/10.32614/CRAN.package.photobiologyPlants)         | 0.5.0   | 2024-04-02 |
+| photobiologyLamps     | [Spectral Irradiance Data for Lamps](https://doi.org/10.32614/CRAN.package.photobiologyLamps)                     | 0.5.2   | 2023-10-24 |
 | photobiologySensors   | [Response Data for Light Sensors](https://doi.org/10.32614/CRAN.package.photobiologySensors)                      | 0.5.1   | 2023-10-24 |
-| photobiologySun       | [Data for Sunlight Spectra](https://doi.org/10.32614/CRAN.package.photobiologySun)                                | 0.5.0   | 2024-04-01 |
 | photobiologyWavebands | [Waveband Definitions for UV, VIS, and IR Radiation](https://doi.org/10.32614/CRAN.package.photobiologyWavebands) | 0.5.2   | 2023-10-24 |
+| ggspectra             | [Extensions to ‘ggplot2’ for Radiation Spectra](https://doi.org/10.32614/CRAN.package.ggspectra)                  | 0.3.12  | 2023-10-21 |
+| photobiologyInOut     | [Read Spectral and Logged Data from Foreign Files](https://doi.org/10.32614/CRAN.package.photobiologyInOut)       | 0.4.27  | 2023-07-20 |
 
 </details>
 
@@ -103,7 +104,7 @@ I published the most recent post 29 days ago.
 
 <details>
 <summary>
-📂 Click to expand a full list of posts
+📂 Click to expand a full list of posts.
 </summary>
 
 | Date       | Title                                                                                                                                                 |
@@ -197,8 +198,6 @@ I published the most recent post 29 days ago.
 
 ## Posts and pages at [Photo Rumblings and Whispers](https://www.photo-spectrum.info/)
 
-    #> Warning: 1 failed to parse.
-
 The [Photo Rumblings and Whispers](https://www.photo-spectrum.info/) has
 27 posts since 2015-10-18! I have recently rebuilt the site using
 Quarto, and I have transferred most of the posts originally published
@@ -217,7 +216,7 @@ I published the most recent post or page 150 days ago.
 
 <details>
 <summary>
-📂 Click to expand a full list of posts
+📂 Click to expand a full list of posts.
 </summary>
 
 | Date       | Title                                                                                                                                   |
@@ -252,9 +251,9 @@ I published the most recent post or page 150 days ago.
 
 </details>
 
-*Updated 2024-07-10 11:32:23.68419*
+*Updated 2024-07-10 12:26:13.551202*
 
-This REAME file is based on the [blog post by Athanasia Mo
+This README file is based on the [blog post by Athanasia Mo
 Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R
 code by Martin
 Henze](https://heads0rtai1s.github.io/2022/07/22/kaggle-dataset-cran-packages/).

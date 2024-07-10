@@ -85,7 +85,7 @@ The sources of the R packages I have published are in public Git repositories at
 
 I have published in CRAN one package update roughly every `r cran_updates_btw` days, or about `r cran_updates_avg` package updates per month, since `r format.Date(first_published)`.
 
-The most recent of these updates was published in CRAN `r round(as.numeric(last_update) / 3600 / 24, 1)` days ago.
+The most recent of these updates was published in CRAN on `r dates[length(dates)]`.
 
 ```{r 'cran-packages-plot', echo = FALSE,  fig.width=10, fig.height=2.5}
 library(lattice)
@@ -116,12 +116,13 @@ xyplot(ones ~ dates,
       )
 ```
 
-<details><summary>📂 Click to expand a full list of my packages</summary>
+<details><summary>📂 Click to expand a list of my packages at CRAN with the most recently updated one at the top.</summary>
 
 ```{r cran-packages-table, results='asis', echo = FALSE}
 my_pkgs_condensed.df |> 
   dplyr::mutate(Title = paste("[", Title, "](", "https://doi.org/", doi, ")", sep = "")) |>
   dplyr::select(-doi) |>
+  dplyr::arrange(desc(Date)) |>
   knitr::kable()
 ```
 </details>
@@ -223,7 +224,7 @@ xyplot(ones ~ date,
 
 ```
 
-<details><summary>📂 Click to expand a full list of posts</summary>
+<details><summary>📂 Click to expand a full list of posts.</summary>
 
 ```{r r4p-posts-table, results='asis', echo = FALSE}
 data.frame(
@@ -236,7 +237,7 @@ data.frame(
 
 ## Posts and pages at [Photo Rumblings and Whispers](https://www.photo-spectrum.info/) 
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, warning=FALSE}
 url_root <- "https://www.photo-spectrum.info/"
 
 post.files <- list.files("~/R-web-blog/photo-spectrum-blog/", 
@@ -252,8 +253,8 @@ photo_posts.df <- tibble::tibble(
   draft = find_key(posts, "draft") |> 
     grepl(pattern = "true", x = _),
   date = lubridate::ymd(find_key(posts, "date")),
-  slug = find_key(posts, "slug") |> 
-    gsub('\\"', "", x = _),
+  # slug = find_key(posts, "slug") |> 
+  #   gsub('\\"', "", x = _),
   title = find_key(posts, "title"),
   post.url = paste(url_root, 
                gsub("C:/Users/Aphalo/Documents/R-web-blog/photo-spectrum-blog/|\\.qmd", 
@@ -312,7 +313,7 @@ xyplot(ones ~ date,
 
 ```
 
-<details><summary>📂 Click to expand a full list of posts</summary>
+<details><summary>📂 Click to expand a full list of posts.</summary>
 
 ```{r photo-posts-table, results='asis', echo = FALSE}
 data.frame(
@@ -325,4 +326,4 @@ data.frame(
 
 _Updated `r Sys.time()`_
 
-This REAME file is based on the [blog post by Athanasia Mo Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R code by Martin Henze](https://heads0rtai1s.github.io/2022/07/22/kaggle-dataset-cran-packages/).
+This README file is based on the [blog post by Athanasia Mo Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R code by Martin Henze](https://heads0rtai1s.github.io/2022/07/22/kaggle-dataset-cran-packages/).
