@@ -87,7 +87,7 @@ badge](https://aphalo.r-universe.dev/badges/:packages)](https://aphalo.r-univers
 ## Posts and Pages at [R for Photobiology](https://www.r4photobiology.info/)
 
 The site [R for Photobiology](https://www.r4photobiology.info) contains
-84 posts and pages published since 2016-09-15! I have recently rebuilt
+88 posts and pages published since 2016-09-15! I have recently rebuilt
 the site using Quarto, and I have transferred only some of the posts
 originally published using WordPress. I am slowly adding more old posts,
 but only those that remain relevant. The figure below shows original
@@ -98,7 +98,7 @@ GitHub](https://github.com/aphalo/r4p-blog).
 I have published one post or page roughly every days, or about 0.9 posts
 per month, since 2016-09-15.
 
-I published the most recent post 29 days ago.
+I published the most recent post 30 days ago.
 
 <img src="illustrations/r4p-plot-1.png" width="100%" />
 
@@ -163,6 +163,7 @@ I published the most recent post 29 days ago.
 | 2023-02-03 | [“ggspectra 0.3.10/0.3.11/0.3.12”](https://www.r4photobiology.info/posts/ggspectra/ggspectra-0.3.10.html)                                             |
 | 2023-01-05 | [“photobiologyWavebands 0.5.1”](https://www.r4photobiology.info/posts/photobiologyWavebands/photobiologyWavebands-0.5.1.html)                         |
 | 2023-01-05 | [“photobiology 0.10.15”](https://www.r4photobiology.info/posts/photobiology/photobiology-0.10.15.html)                                                |
+| 2022-12-30 | [“Are plants and plant canopies flat?”](https://www.r4photobiology.info/senpep-posts/entrance-optics.html)                                            |
 | 2022-12-23 | [“Visit to Universidad Austral de Chile”](https://www.r4photobiology.info/senpep-posts/valdivia-2022.html)                                            |
 | 2022-12-17 | [“Enhancing geom_text() and geom_label()”](https://www.r4photobiology.info/posts/Enhancing-geom-text/index.html)                                      |
 | 2022-12-05 | [“ggpp \>= 0.5.0 updates”](https://www.r4photobiology.info/posts/ggpp/ggpp-0.5.x.html)                                                                |
@@ -186,6 +187,9 @@ I published the most recent post 29 days ago.
 | 2022-05-14 | [“photobiologyLEDs 0.5.0”](https://www.r4photobiology.info/posts/photobiologyLEDs/photobiologyLEDs-0.5.0.html)                                        |
 | 2022-04-29 | [“R 4.2.0”](https://www.r4photobiology.info/posts/R-news/R-4.2.0.html)                                                                                |
 | 2022-04-16 | [“ggspectra 0.3.8”](https://www.r4photobiology.info/posts/ggspectra/ggspectra-0.3.8.html)                                                             |
+| 2022-01-30 | [“Instrumentation”](https://www.r4photobiology.info/senpep-posts/instrumentation.html)                                                                |
+| 2022-01-30 | [“Controlled Environment Chambers”](https://www.r4photobiology.info/senpep-posts/chambers.html)                                                       |
+| 2022-01-29 | [“LED-based light sources”](https://www.r4photobiology.info/senpep-posts/light-sources.html)                                                          |
 | 2021-10-20 | [“What is plant intelligence? and what it is not?”](https://www.r4photobiology.info/senpep-posts/plant-intelligence.html)                             |
 | 2020-07-12 | [“Performance of package photobiology”](https://www.r4photobiology.info/posts/photobiology/photobiology-performance.html)                             |
 | 2019-04-24 | [“Benchmarking function `sun_angles()`”](https://www.r4photobiology.info/posts/photobiology/benchmarking-sun_angles/index.html)                       |
@@ -210,7 +214,7 @@ repository at GitHub](https://github.com/aphalo/photo-spectrum-blog).
 I have published one post or page roughly every days, or about 0.3 posts
 per month, since 2015-10-18.
 
-I published the most recent post or page 150 days ago.
+I published the most recent post or page 151 days ago.
 
 <img src="illustrations/photo-plot-1.png" width="100%" />
 
@@ -251,7 +255,7 @@ I published the most recent post or page 150 days ago.
 
 </details>
 
-*Updated 2024-07-10 12:26:13.551202*
+*Updated 2024-07-11 10:21:40.384133*
 
 This README file is based on the [blog post by Athanasia Mo
 Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R
