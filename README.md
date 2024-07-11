@@ -87,7 +87,7 @@ badge](https://aphalo.r-universe.dev/badges/:packages)](https://aphalo.r-univers
 ## Posts and Pages at [R for Photobiology](https://www.r4photobiology.info/)
 
 The site [R for Photobiology](https://www.r4photobiology.info) contains
-88 posts and pages published since 2016-09-15! I have recently rebuilt
+90 posts and pages published since 2016-09-15! I have recently rebuilt
 the site using Quarto, and I have transferred only some of the posts
 originally published using WordPress. I am slowly adding more old posts,
 but only those that remain relevant. The figure below shows original
@@ -98,7 +98,7 @@ GitHub](https://github.com/aphalo/r4p-blog).
 I have published one post or page roughly every days, or about 0.9 posts
 per month, since 2016-09-15.
 
-I published the most recent post 30 days ago.
+I published the most recent post 2 days ago.
 
 <img src="illustrations/r4p-plot-1.png" width="100%" />
 
@@ -109,6 +109,7 @@ I published the most recent post 30 days ago.
 
 | Date       | Title                                                                                                                                                 |
 |:-----------|:------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024-07-10 | [“Multichannel LED arrays”](https://www.r4photobiology.info/senpep-posts/led-arrays.html)                                                             |
 | 2024-06-11 | [“On the move from Wordpress to Quarto”](https://www.r4photobiology.info/senpep-posts/index.html)                                                     |
 | 2024-06-01 | [“Fitted-model labels in Markdown”](https://www.r4photobiology.info/galleries/plot-equations-markdown.html)                                           |
 | 2024-05-28 | [“Looking back 40 years”](https://www.r4photobiology.info/presentations/research-40-years.html)                                                       |
@@ -191,6 +192,7 @@ I published the most recent post 30 days ago.
 | 2022-01-30 | [“Controlled Environment Chambers”](https://www.r4photobiology.info/senpep-posts/chambers.html)                                                       |
 | 2022-01-29 | [“LED-based light sources”](https://www.r4photobiology.info/senpep-posts/light-sources.html)                                                          |
 | 2021-10-20 | [“What is plant intelligence? and what it is not?”](https://www.r4photobiology.info/senpep-posts/plant-intelligence.html)                             |
+| 2021-10-17 | [“Sensing of solar UVA by plants”](https://www.r4photobiology.info/senpep-posts/UVR8-in-solar-UVA.html)                                               |
 | 2020-07-12 | [“Performance of package photobiology”](https://www.r4photobiology.info/posts/photobiology/photobiology-performance.html)                             |
 | 2019-04-24 | [“Benchmarking function `sun_angles()`”](https://www.r4photobiology.info/posts/photobiology/benchmarking-sun_angles/index.html)                       |
 | 2019-02-22 | [“Yoctopuce modules: Spectrometer”](https://www.r4photobiology.info/posts/yoctopuce-modules/spectrometer.html)                                        |
@@ -214,7 +216,7 @@ repository at GitHub](https://github.com/aphalo/photo-spectrum-blog).
 I have published one post or page roughly every days, or about 0.3 posts
 per month, since 2015-10-18.
 
-I published the most recent post or page 151 days ago.
+I published the most recent post or page 152 days ago.
 
 <img src="illustrations/photo-plot-1.png" width="100%" />
 
@@ -255,7 +257,7 @@ I published the most recent post or page 151 days ago.
 
 </details>
 
-*Updated 2024-07-11 10:21:40.384133*
+*Updated 2024-07-12 00:25:09.072565*
 
 This README file is based on the [blog post by Athanasia Mo
 Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R
