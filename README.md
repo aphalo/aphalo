@@ -87,7 +87,7 @@ badge](https://aphalo.r-universe.dev/badges/:packages)](https://aphalo.r-univers
 ## Posts and Pages at [R for Photobiology](https://www.r4photobiology.info/)
 
 The site [R for Photobiology](https://www.r4photobiology.info) contains
-90 posts and pages published since 2016-09-15! I have recently rebuilt
+93 posts and pages published since 2016-09-15! I have recently rebuilt
 the site using Quarto, and I have transferred only some of the posts
 originally published using WordPress. I am slowly adding more old posts,
 but only those that remain relevant. The figure below shows original
@@ -95,7 +95,7 @@ publication date even when posts have been later updated. The source
 files are in a [public repository at
 GitHub](https://github.com/aphalo/r4p-blog).
 
-I have published one post or page roughly every days, or about 0.9 posts
+I have published one post or page roughly every days, or about 1.0 posts
 per month, since 2016-09-15.
 
 I published the most recent post 2 days ago.
@@ -193,7 +193,10 @@ I published the most recent post 2 days ago.
 | 2022-01-29 | [“LED-based light sources”](https://www.r4photobiology.info/senpep-posts/light-sources.html)                                                          |
 | 2021-10-20 | [“What is plant intelligence? and what it is not?”](https://www.r4photobiology.info/senpep-posts/plant-intelligence.html)                             |
 | 2021-10-17 | [“Sensing of solar UVA by plants”](https://www.r4photobiology.info/senpep-posts/UVR8-in-solar-UVA.html)                                               |
+| 2021-10-17 | [“Cryptochromes and stomatal opening”](https://www.r4photobiology.info/senpep-posts/fang-stomata.html)                                                |
+| 2021-07-13 | [“Perception of solar UV radiation by plants”](https://www.r4photobiology.info/senpep-posts/perception-of-solar-ultraviolet.html)                     |
 | 2020-07-12 | [“Performance of package photobiology”](https://www.r4photobiology.info/posts/photobiology/photobiology-performance.html)                             |
+| 2020-04-25 | [“UVR8 is an UV-B and UV-A photoreceptor”](https://www.r4photobiology.info/senpep-posts/UVR8-two-research-papers.html)                                |
 | 2019-04-24 | [“Benchmarking function `sun_angles()`”](https://www.r4photobiology.info/posts/photobiology/benchmarking-sun_angles/index.html)                       |
 | 2019-02-22 | [“Yoctopuce modules: Spectrometer”](https://www.r4photobiology.info/posts/yoctopuce-modules/spectrometer.html)                                        |
 | 2019-02-21 | [“Yoctopuce modules: Introduction”](https://www.r4photobiology.info/posts/yoctopuce-modules/introduction.html)                                        |
@@ -257,7 +260,7 @@ I published the most recent post or page 152 days ago.
 
 </details>
 
-*Updated 2024-07-12 00:25:09.072565*
+*Updated 2024-07-12 19:25:20.503782*
 
 This README file is based on the [blog post by Athanasia Mo
 Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R
