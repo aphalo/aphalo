@@ -87,7 +87,7 @@ badge](https://aphalo.r-universe.dev/badges/:packages)](https://aphalo.r-univers
 ## Posts and Pages at [R for Photobiology](https://www.r4photobiology.info/)
 
 The site [R for Photobiology](https://www.r4photobiology.info) contains
-93 posts and pages published since 2016-09-15! I have recently rebuilt
+95 posts and pages published since 2016-09-15! I have recently rebuilt
 the site using Quarto, and I have transferred only some of the posts
 originally published using WordPress. I am slowly adding more old posts,
 but only those that remain relevant. The figure below shows original
@@ -98,7 +98,7 @@ GitHub](https://github.com/aphalo/r4p-blog).
 I have published one post or page roughly every days, or about 1.0 posts
 per month, since 2016-09-15.
 
-I published the most recent post 2 days ago.
+I published the most recent post 1 days ago.
 
 <img src="illustrations/r4p-plot-1.png" width="100%" />
 
@@ -109,8 +109,9 @@ I published the most recent post 2 days ago.
 
 | Date       | Title                                                                                                                                                 |
 |:-----------|:------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024-07-13 | [“R Packages: Timeline of Updates”](https://www.r4photobiology.info/pages/CRAN-activity.html)                                                         |
 | 2024-07-10 | [“Multichannel LED arrays”](https://www.r4photobiology.info/senpep-posts/led-arrays.html)                                                             |
-| 2024-06-11 | [“On the move from Wordpress to Quarto”](https://www.r4photobiology.info/senpep-posts/index.html)                                                     |
+| 2024-06-11 | [“Move from Wordpress to Quarto”](https://www.r4photobiology.info/senpep-posts/index.html)                                                            |
 | 2024-06-01 | [“Fitted-model labels in Markdown”](https://www.r4photobiology.info/galleries/plot-equations-markdown.html)                                           |
 | 2024-05-28 | [“Looking back 40 years”](https://www.r4photobiology.info/presentations/research-40-years.html)                                                       |
 | 2024-05-16 | [“Is this a polynomial?”](https://www.r4photobiology.info/posts/is-this-a-polynomial.html)                                                            |
@@ -201,6 +202,7 @@ I published the most recent post 2 days ago.
 | 2019-02-22 | [“Yoctopuce modules: Spectrometer”](https://www.r4photobiology.info/posts/yoctopuce-modules/spectrometer.html)                                        |
 | 2019-02-21 | [“Yoctopuce modules: Introduction”](https://www.r4photobiology.info/posts/yoctopuce-modules/introduction.html)                                        |
 | 2018-08-10 | [“Using the Quick TUV Calculator”](https://www.r4photobiology.info/galleries/QuickTUV.html)                                                           |
+| 2017-11-24 | [“Article titles in the era of the internet”](https://www.r4photobiology.info/senpep-posts/article-titles-internet.html)                              |
 | 2016-09-15 | [“For those interested in optical properties”](https://www.r4photobiology.info/pages/refractive-index.html)                                           |
 
 </details>
@@ -219,7 +221,7 @@ repository at GitHub](https://github.com/aphalo/photo-spectrum-blog).
 I have published one post or page roughly every days, or about 0.3 posts
 per month, since 2015-10-18.
 
-I published the most recent post or page 152 days ago.
+I published the most recent post or page 154 days ago.
 
 <img src="illustrations/photo-plot-1.png" width="100%" />
 
@@ -260,7 +262,7 @@ I published the most recent post or page 152 days ago.
 
 </details>
 
-*Updated 2024-07-12 19:25:20.503782*
+*Updated 2024-07-14 10:33:58.507133*
 
 This README file is based on the [blog post by Athanasia Mo
 Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R
