@@ -164,6 +164,7 @@ r4p_posts.df <- tibble::tibble(
   draft = find_key(posts, "draft") |> 
     grepl(pattern = "true", x = _),
   date = lubridate::ymd(find_key(posts, "date")),
+  date.modified = lubridate::ymd(find_key(posts, "date-modified")),
   slug = find_key(posts, "slug") |> 
     gsub('\\"', "", x = _),
   title = find_key(posts, "title"),
@@ -175,11 +176,14 @@ r4p_posts.df <- tibble::tibble(
   link = paste("[", title, "]", "(", post.url, ")", sep = "")
 ) |> 
   subset(subset = !draft & !is.na(date)) |> # date is NA for indexes and home
+  dplyr::mutate(date.modified = as.Date(ifelse(is.na(date.modified), date, date.modified))) |>
   dplyr::arrange(date)
 
 today    <- lubridate::today()
+
 min_date <- min(r4p_posts.df$date, na.rm = TRUE)
 last_post <- lubridate::days(today - max(r4p_posts.df$date, na.rm = TRUE))
+last_update <- lubridate::days(today - max(r4p_posts.df$date.modified, na.rm = TRUE))
 
 r4p_post_avg <- nrow(r4p_posts.df)/as.numeric(today - min_date) * 30
 r4p_post_avg <- sprintf("%0.1f", r4p_post_avg)
@@ -192,7 +196,7 @@ The site [R for Photobiology](https://www.r4photobiology.info) contains `r nrow(
 
 I have published one post or page roughly every `r r4p_postbtw` days, or about `r r4p_post_avg` posts per month, since `r format.Date(min_date)`.
 
-I published the most recent post `r as.numeric(last_post) / 3600 / 24` days ago.
+I published the most recent post or page `r as.numeric(last_post) / 3600 / 24` days ago, and most recently updated a previously published one `r as.numeric(last_update) / 3600 / 24` days ago.
 
 ```{r 'r4p-plot', echo = FALSE,  fig.width=10, fig.height=2.5}
 library(lattice)
@@ -229,6 +233,7 @@ xyplot(ones ~ date,
 ```{r r4p-posts-table, results='asis', echo = FALSE}
 data.frame(
   Date = rev(r4p_posts.df$date),
+  Updated = rev(r4p_posts.df$date.modified),
   Title = rev(r4p_posts.df$link)
 ) |> 
   knitr::kable()
@@ -253,6 +258,7 @@ photo_posts.df <- tibble::tibble(
   draft = find_key(posts, "draft") |> 
     grepl(pattern = "true", x = _),
   date = lubridate::ymd(find_key(posts, "date")),
+  date.modified = lubridate::ymd(find_key(posts, "date-modified")),
   # slug = find_key(posts, "slug") |> 
   #   gsub('\\"', "", x = _),
   title = find_key(posts, "title"),
@@ -264,6 +270,7 @@ photo_posts.df <- tibble::tibble(
   link = paste("[", title, "]", "(", post.url, ")", sep = "")
 ) |> 
   subset(subset = !draft & !is.na(date)) |> # date is NA for indexes and home
+  dplyr::mutate(date.modified = as.Date(ifelse(is.na(date.modified), date, date.modified))) |>
   dplyr::arrange(date)
 
 today    <- lubridate::today()
@@ -318,6 +325,7 @@ xyplot(ones ~ date,
 ```{r photo-posts-table, results='asis', echo = FALSE}
 data.frame(
   Date = rev(photo_posts.df$date),
+  Updated = rev(photo_posts.df$date.modified),
   Title = rev(photo_posts.df$link)
 ) |> 
   knitr::kable()
