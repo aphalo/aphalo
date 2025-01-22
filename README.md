@@ -39,13 +39,13 @@ Language](https://www.learnr-book.info/).
 The sources of the R packages I have published are in public Git
 repositories at GitHub. Out of the packages that I have authored and
 maintain, 15 are currently available through CRAN. The total number of
-packages submissions (mostly updates) as author and maintainer is 214
+package submissions (mostly updates) as author and maintainer is 215
 since 2016-01-29.
 
 I have published in CRAN one package update roughly every 15 days, or
-about 1.96 package updates per month, since 2016-01-29.
+about 1.97 package updates per month, since 2016-01-29.
 
-The most recent of these updates was published in CRAN on 2025-01-09.
+The most recent of these updates was published in CRAN on 2025-01-12.
 
 <img src="illustrations/cran-packages-plot-1.png" width="100%" />
 
@@ -57,7 +57,8 @@ updated one at the top.
 
 | R package | Title | Version | Date |
 |:---|:---|:---|:---|
-| SunCalcMeeus | [Sun Position and Daylight Calculations](https://doi.org/NA) | 0.1.2 | 2025-01-09 |
+| photobiologyPlants | [Plant Photobiology Related Functions and Data](https://doi.org/10.32614/CRAN.package.photobiologyPlants) | 0.6.0 | 2025-01-12 |
+| SunCalcMeeus | [Sun Position and Daylight Calculations](https://doi.org/10.32614/CRAN.package.SunCalcMeeus) | 0.1.2 | 2025-01-09 |
 | ggspectra | [Extensions to ‘ggplot2’ for Radiation Spectra](https://doi.org/10.32614/CRAN.package.ggspectra) | 0.3.15 | 2025-01-08 |
 | photobiology | [Photobiological Calculations](https://doi.org/10.32614/CRAN.package.photobiology) | 0.11.4 | 2024-11-30 |
 | photobiologyInOut | [Read Spectral and Logged Data from Foreign Files](https://doi.org/10.32614/CRAN.package.photobiologyInOut) | 0.4.29 | 2024-11-22 |
@@ -65,7 +66,6 @@ updated one at the top.
 | ggpmisc | [Miscellaneous Extensions to ‘ggplot2’](https://doi.org/10.32614/CRAN.package.ggpmisc) | 0.6.1 | 2024-11-14 |
 | ggpp | [Grammar Extensions to ‘ggplot2’](https://doi.org/10.32614/CRAN.package.ggpp) | 0.5.8-1 | 2024-07-01 |
 | learnrbook | [Datasets and Code Examples from P. J. Aphalo’s “Learn R” Book](https://doi.org/10.32614/CRAN.package.learnrbook) | 2.0.1 | 2024-04-28 |
-| photobiologyPlants | [Plant Photobiology Related Functions and Data](https://doi.org/10.32614/CRAN.package.photobiologyPlants) | 0.5.0 | 2024-04-02 |
 | photobiologySun | [Data for Sunlight Spectra](https://doi.org/10.32614/CRAN.package.photobiologySun) | 0.5.0 | 2024-04-01 |
 | photobiologyFilters | [Spectral Transmittance and Spectral Reflectance Data](https://doi.org/10.32614/CRAN.package.photobiologyFilters) | 0.6.0 | 2024-02-27 |
 | photobiologyLEDs | [Spectral Data for Light-Emitting-Diodes](https://doi.org/10.32614/CRAN.package.photobiologyLEDs) | 0.5.2 | 2023-11-01 |
@@ -79,6 +79,9 @@ Updates under development are published at R-Universe as soon as merged
 or commited into the main branch in the repositories at GitHub. Two
 packages that depend on a commercial closed-source driver, but usable
 with a free runtime of the driver, are published only at R-Universe.
+Preliminary/experimental incomplete versions of a couple of new packages
+are already partly usable are also only at R-Universe and here in
+GitHub.
 
 R-Universe profile: <https://aphalo.r-universe.dev>. [![:name status
 badge](https://aphalo.r-universe.dev/badges/:name)](https://aphalo.r-universe.dev/)
@@ -101,8 +104,8 @@ GitHub](https://github.com/aphalo/r4p-blog).
 I have published one post or page roughly every days, or about 0.9 posts
 per month, since 2016-09-15.
 
-I published the most recent post or page 180 days ago, and most recently
-updated a previously published one 40 days ago.
+I published the most recent post or page 193 days ago, and most recently
+updated a previously published one 6 days ago.
 
 <img src="illustrations/r4p-plot-1.png" width="100%" />
 
@@ -114,7 +117,7 @@ updated a previously published one 40 days ago.
 | Date | Updated | Title |
 |:---|:---|:---|
 | 2024-07-13 | 2024-07-13 | [“R Packages: Timeline of Updates”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/pages/CRAN-activity.html) |
-| 2024-07-10 | 2024-07-10 | [“Multichannel LED arrays”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/senpep-posts/led-arrays.html) |
+| 2024-07-10 | 2025-01-14 | [“Multichannel LED arrays”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/senpep-posts/led-arrays.html) |
 | 2024-06-11 | 2024-07-13 | [“Move from Wordpress to Quarto”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/senpep-posts/index.html) |
 | 2024-06-01 | 2024-06-08 | [“Fitted-model labels in Markdown”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/galleries/plot-equations-markdown.html) |
 | 2024-05-28 | 2024-05-28 | [“Looking back 40 years”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/presentations/research-40-years.html) |
@@ -158,7 +161,7 @@ updated a previously published one 40 days ago.
 | 2023-02-27 | 2024-06-06 | [“Fitted-model labels with ggpmisc”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/galleries/plot-equations.html) |
 | 2023-02-25 | 2023-07-16 | [“Volcano and quadrant plots with ggpmisc”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/galleries/quadrant-volcano-plots.html) |
 | 2023-02-25 | 2023-02-25 | [“Data labels in bar plots with ggpp”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/galleries/bar-col-plots.html) |
-| 2023-02-23 | 2023-02-23 | [“ggplot insets with package ggpp”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/galleries/plot-insets.html) |
+| 2023-02-23 | 2025-01-16 | [“ggplot insets with package ggpp”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/galleries/plot-insets.html) |
 | 2023-02-20 | 2023-08-07 | [“Handbook on photobiological calculations with R”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/pages/r4p-book.html) |
 | 2023-02-20 | 2023-02-20 | [“A handbook of best practice in plant UV photobiology”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/pages/beyond-the-visible.html) |
 | 2023-02-19 | 2023-02-19 | [“The R for Photobiology Suite”](https://www.r4photobiology.info/C:/Users/aphalo/Documents/R-web-blog/r4p-blog/pages/r4p-introduction.html) |
@@ -225,7 +228,7 @@ repository at GitHub](https://github.com/aphalo/photo-spectrum-blog).
 I have published one post or page roughly every days, or about 0.3 posts
 per month, since 2015-10-18.
 
-I published the most recent post or page 20 days ago.
+I published the most recent post or page 33 days ago.
 
 <img src="illustrations/photo-plot-1.png" width="100%" />
 
@@ -248,7 +251,7 @@ I published the most recent post or page 20 days ago.
 | 2023-04-14 | 2024-02-20 | [“UV short-pass filters”](https://www.photo-spectrum.info/C:/Users/aphalo/Documents/R-web-blog/photo-spectrum-blog/pages/filters/UV-filters.html) |
 | 2023-04-12 | 2024-11-07 | [“Notes on the OM-1 (digital) camera”](https://www.photo-spectrum.info/C:/Users/aphalo/Documents/R-web-blog/photo-spectrum-blog/pages/cameras/OM1-notes.html) |
 | 2022-10-15 | 2023-12-04 | [“Small fill/video LED lights revisited”](https://www.photo-spectrum.info/C:/Users/aphalo/Documents/R-web-blog/photo-spectrum-blog/pages/illumination/led-fill-lights-2.html) |
-| 2022-10-15 | 2024-11-28 | [“UV-A-Induced VIS Fluorescence—Methods”](https://www.photo-spectrum.info/C:/Users/aphalo/Documents/R-web-blog/photo-spectrum-blog/pages/fluorescence/uvaivf-methods.html) |
+| 2022-10-15 | 2025-01-12 | [“UV-A-Induced VIS Fluorescence—Methods”](https://www.photo-spectrum.info/C:/Users/aphalo/Documents/R-web-blog/photo-spectrum-blog/pages/fluorescence/uvaivf-methods.html) |
 | 2021-10-25 | 2023-04-20 | [“Broad band VIS+NIR LEDs”](https://www.photo-spectrum.info/C:/Users/aphalo/Documents/R-web-blog/photo-spectrum-blog/pages/illumination/vis-nir-led.html) |
 | 2021-08-21 | 2024-12-21 | [“Photo Rumblings and Whispers”](https://www.photo-spectrum.info/C:/Users/aphalo/Documents/R-web-blog/photo-spectrum-blog/index.html) |
 | 2021-02-01 | 2023-04-14 | [“NIR long-pass filters”](https://www.photo-spectrum.info/C:/Users/aphalo/Documents/R-web-blog/photo-spectrum-blog/pages/filters/NIR-filters.html) |
@@ -271,7 +274,7 @@ I published the most recent post or page 20 days ago.
 
 </details>
 
-*Updated 2025-01-09 22:10:34.820782*
+*Updated 2025-01-22 23:09:42.700824*
 
 This README file is based on the [blog post by Athanasia Mo
 Mowinckel](https://drmowinckels.io/blog/2024/github-profile/) and the [R

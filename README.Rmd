@@ -81,7 +81,7 @@ cran_updates_btw <- as.numeric(today - first_published) / length(dates)
 cran_updates_btw <- sprintf("%s", round(cran_updates_btw, digits = 0))
 ```
 
-The sources of the R packages I have published are in public Git repositories at GitHub. Out of the packages that I have authored and maintain, `r length(packages)` are currently available through CRAN. The total number of packages submissions (mostly updates) as author and maintainer is `r length(dates)` since `r format.Date(first_published)`.
+The sources of the R packages I have published are in public Git repositories at GitHub. Out of the packages that I have authored and maintain, `r length(packages)` are currently available through CRAN. The total number of package submissions (mostly updates) as author and maintainer is `r length(dates)` since `r format.Date(first_published)`.
 
 I have published in CRAN one package update roughly every `r cran_updates_btw` days, or about `r cran_updates_avg` package updates per month, since `r format.Date(first_published)`.
 
@@ -127,7 +127,7 @@ my_pkgs_condensed.df |>
 ```
 </details>
 
-Updates under development are published at R-Universe as soon as merged or commited into the main branch in the repositories at GitHub. Two packages that depend on a commercial closed-source driver, but usable with a free runtime of the driver, are published only at R-Universe.
+Updates under development are published at R-Universe as soon as merged or commited into the main branch in the repositories at GitHub. Two packages that depend on a commercial closed-source driver, but usable with a free runtime of the driver, are published only at R-Universe. Preliminary/experimental incomplete versions of a couple of new packages are already partly usable are also only at R-Universe and here in GitHub. 
 
 R-Universe profile: [https://aphalo.r-universe.dev](https://aphalo.r-universe.dev).
 [![:name status badge](https://aphalo.r-universe.dev/badges/:name)](https://aphalo.r-universe.dev/)
