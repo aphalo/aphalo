@@ -78,7 +78,7 @@ cran_updates_avg <- length(dates)/as.numeric(today - first_published) * 30
 cran_updates_avg <- sprintf("%0.2f", cran_updates_avg)
 
 cran_updates_btw <- as.numeric(today - first_published) / length(dates)
-cran_updates_btw <- sprintf("%s", round(cran_updates_btw, digits = 0))
+cran_updates_btw <- round(cran_updates_btw, digits = 0)
 ```
 
 The sources of the R packages I have published are in public Git repositories at GitHub. Out of the packages that I have authored and maintain, `r length(packages)` are currently available through CRAN. The total number of package submissions (mostly updates) as author and maintainer is `r length(dates)` since `r format.Date(first_published)`.
@@ -148,7 +148,9 @@ find_key <- function(x, key){
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, warning = FALSE}
+# warnings are issued if "date: today" or "date-modified: today"
+# used in contents pages
 url_root <- "https://www.r4photobiology.info/"
 
 post.files <- list.files("~/R-web-blog/r4p-blog/", 
@@ -188,8 +190,8 @@ last_update <- lubridate::days(today - max(r4p_posts.df$date.modified, na.rm = T
 r4p_post_avg <- nrow(r4p_posts.df)/as.numeric(today - min_date) * 30
 r4p_post_avg <- sprintf("%0.1f", r4p_post_avg)
 
-r4p_postbtw <- as.numeric(today - min_date) / nrow(r4p_post_avg)
-r4p_postbtw <- sprintf("%s", round(r4p_postbtw, digits = 0))
+r4p_postbtw <- as.numeric(today - min_date) / nrow(r4p_posts.df)
+r4p_postbtw <- round(r4p_postbtw, digits = 0)
 ```
 
 The site [R for Photobiology](https://www.r4photobiology.info) contains `r nrow(r4p_posts.df)` posts and pages published since `r format.Date(min_date)`! I have recently rebuilt the site using Quarto, and I have transferred only some of the posts originally published using WordPress. I am slowly adding more old posts, but only those that remain relevant. The figure below shows original publication date even when posts have been later updated. The source files are in a [public repository at GitHub](https://github.com/aphalo/r4p-blog).
@@ -280,8 +282,8 @@ last_post <- lubridate::days(today - max(photo_posts.df$date, na.rm = TRUE))
 photo_post_avg <- nrow(photo_posts.df)/as.numeric(today - min_date) * 30
 photo_post_avg <- sprintf("%0.1f", photo_post_avg)
 
-photo_postbtw <- as.numeric(today - min_date) / nrow(r4p_post_avg)
-photo_postbtw <- sprintf("%s", round(photo_postbtw, digits = 0))
+photo_postbtw <- as.numeric(today - min_date) / nrow(photo_posts.df)
+photo_postbtw <- round(photo_postbtw, digits = 0)
 ```
 
 The [Photo Rumblings and Whispers](https://www.photo-spectrum.info/) has `r nrow(photo_posts.df)` posts since `r format.Date(min_date)`!  I have recently rebuilt the site using Quarto, and I have transferred most of the posts originally published using WordPress. I may add one or two old posts. The figure below shows original publication date even when posts and pages have been later updated. I have updated several of the posts and pages and I aim to continue updating them as needed.  The source files are in a [public repository at GitHub](https://github.com/aphalo/photo-spectrum-blog).
