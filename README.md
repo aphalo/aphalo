@@ -6,7 +6,7 @@ output: github_document
 
 
 
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=aphalo&show_icons=true&theme=transparent)](https://github.com/anuraghazra/github-readme-stats)
+[![GitHub stats](https://github-stats-extended.vercel.app/api?username=aphalo&show_icons=true&theme=transparent)]((https://github.com/stats-organization/github-stats-extended))
 
 ## Computing-related Skills
 
@@ -80,7 +80,7 @@ The most recent of these updates was published in CRAN on 2026-03-23.
 
 Updates under development are published at R-Universe as soon as merged or commited into the main branch in the repositories at GitHub. Two packages that depend on a commercial closed-source driver, but usable with a free runtime of the driver, are published only at R-Universe. Preliminary/experimental incomplete versions of a couple of new packages are already partly usable are also only at R-Universe and here in GitHub. 
 
-R-Universe profile: [https://aphalo.r-universe.dev](https://aphalo.r-universe.dev).
+R-Universe profile: <https://aphalo.r-universe.dev>.
 [![:name status badge](https://aphalo.r-universe.dev/badges/:name)](https://aphalo.r-universe.dev/)
 [![:packages status badge](https://aphalo.r-universe.dev/badges/:packages)](https://aphalo.r-universe.dev/)
 
